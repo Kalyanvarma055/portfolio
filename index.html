@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="theme-color" content="#0b1017"/>
+  <script>!function(){try{var t=localStorage.getItem("portfolio-theme");t||(t=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"),document.documentElement.setAttribute("data-theme",t)}catch(t){}}()</script>
+  <meta name="description" content="Kalyan Varma Lokam — data scientist and AI engineer building credit risk models and production LLM workflows on Palantir Foundry, AWS, and Databricks."/>
+  <link rel="apple-touch-icon" href="logo192.png"/>
+  <link rel="manifest" href="manifest.json"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{ink:"#0b1017",steel:"#7eb6ff",mist:"#e8eef7"},fontFamily:{display:["Syne","sans-serif"],body:["Instrument Sans","sans-serif"]}}}}</script>
+  <title>Kalyan Varma — Portfolio</title>
+  <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root">
+  <div class="app-shell" id="app-shell">
+
+    <div class="preloader" id="preloader">
+      <div class="preloader__inner">
+        <div class="preloader__logo">
+          <svg class="site-logo" width="56" height="56" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kalyan Varma">
+            <rect x="2.5" y="2.5" width="59" height="59" rx="16" stroke="currentColor" stroke-width="2" opacity="0.88"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19 13.5H25V30.2L41.9 13.5H49.6L31.6 31.9L49.8 50H42L25 33.2V50H19Z" fill="currentColor"/>
+            <rect x="23.2" y="36.4" width="17.6" height="3.6" rx="1.2" fill="var(--accent, #8ec5ff)"/>
+            <circle cx="32" cy="10.2" r="2.1" fill="var(--accent, #8ec5ff)"/>
+          </svg>
+        </div>
+        <p class="preloader__brand">Kalyan Varma</p>
+        <div class="preloader__count" id="preloader-count">000</div>
+        <div class="preloader__bar"><span id="preloader-bar"></span></div>
+      </div>
+    </div>
+
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <div class="site-content" id="site-content">
+
+      <nav class="nav" id="nav">
+        <div class="container nav__inner">
+          <a href="#home" class="nav__brand js-scroll" data-target="home" aria-label="Kalyan Varma — Home">
+            <svg class="site-logo nav__logo" width="40" height="40" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logo-title logo-desc">
+              <title id="logo-title">Kalyan Varma</title>
+              <desc id="logo-desc">Geometric letter K with a horizon bar — Kalyan Varma mark</desc>
+              <rect x="2.5" y="2.5" width="59" height="59" rx="16" stroke="currentColor" stroke-width="2" opacity="0.88"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M19 13.5H25V30.2L41.9 13.5H49.6L31.6 31.9L49.8 50H42L25 33.2V50H19Z" fill="currentColor"/>
+              <rect x="23.2" y="36.4" width="17.6" height="3.6" rx="1.2" fill="var(--accent, #8ec5ff)"/>
+              <circle cx="32" cy="10.2" r="2.1" fill="var(--accent, #8ec5ff)"/>
+            </svg>
+            <span class="nav__brand-text">Kalyan Varma</span>
+          </a>
+          <ul class="nav__links">
+            <li><a href="#home" class="js-scroll js-spy" data-target="home">Home</a></li>
+            <li><a href="#experience" class="js-scroll js-spy" data-target="experience">Experience</a></li>
+            <li><a href="#process" class="js-scroll js-spy" data-target="process">Process</a></li>
+            <li><a href="#about" class="js-scroll js-spy" data-target="about">About</a></li>
+            <li><a href="#contact" class="js-scroll js-spy" data-target="contact">Contact</a></li>
+          </ul>
+          <div class="nav__actions">
+            <button type="button" class="theme-toggle js-theme-toggle" aria-label="Switch to light theme" title="Light mode"></button>
+            <div class="nav__mobile-toggle" id="mobile-toggle"></div>
+          </div>
+        </div>
+      </nav>
+      <div class="nav__drawer" id="nav-drawer" hidden>
+        <ul>
+          <li><a href="#home" class="js-scroll" data-target="home">Home</a></li>
+          <li><a href="#experience" class="js-scroll" data-target="experience">Experience</a></li>
+          <li><a href="#process" class="js-scroll" data-target="process">Process</a></li>
+          <li><a href="#about" class="js-scroll" data-target="about">About</a></li>
+          <li><a href="#contact" class="js-scroll" data-target="contact">Contact</a></li>
+          <li><button type="button" class="theme-toggle theme-toggle--block js-theme-toggle-block">Light mode</button></li>
+        </ul>
+      </div>
+
+      <section id="home" class="hero">
+        <a href="#contact" class="status-pill js-scroll" data-target="contact" aria-label="Open to opportunities — contact">
+          <span class="status-pill__dot"></span>Open to opportunities
+        </a>
+        <div class="hero__atmosphere" aria-hidden="true"></div>
+        <div class="hero__grid" aria-hidden="true"></div>
+        <div class="hero__orb hero__orb--one" aria-hidden="true"></div>
+        <div class="hero__orb hero__orb--two" aria-hidden="true"></div>
+        <div class="container hero__inner">
+          <div class="hero__copy">
+            <p class="eyebrow hero__greeting" data-helium-animation="fade" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>
+              <span class="greeting-cycle is-in" id="greeting" aria-live="polite">Hello</span>
+              <span class="hero__greeting-sep">—</span>
+              <span class="hero__role">Data scientist · AI engineer</span>
+            </p>
+            <h1 class="hero__brand">
+              <span class="hero__brand-line">
+                <span class="split-text split-text--chars" aria-label="Kalyan"><span class="split-text__word" aria-hidden="true"><span class="split-text__mask"><span class="split-text__unit" data-helium-animation="textRevealUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0,"easing":[0.16,1,0.3,1]}}'>K</span></span><span class="split-text__mask"><span class="split-text__unit" data-helium-animation="textRevealUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.03,"easing":[0.16,1,0.3,1]}}'>a</span></span><span class="split-text__mask"><span class="split-text__unit" data-helium-animation="textRevealUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.06,"easing":[0.16,1,0.3,1]}}'>l</span></span><span class="split-text__mask"><span class="split-text__unit" data-helium-animation="textRevealUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.09,"easing":[0.16,1,0.3,1]}}'>y</span></span><span class="split-text__mask"><span class="split-text__unit" data-helium-animation="textRevealUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.12,"easing":[0.16,1,0.3,1]}}'>a</span></span><span class="split-text__mask"><span class="split-text__unit" data-helium-animation="textRevealUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.15,"easing":[0.16,1,0.3,1]}}'>n</span></span></span></span>
+              </span>
+              <span class="hero__brand-line hero__brand-line--accent">
+                <span class="split-text split-text--chars" aria-label="Varma"><span class="split-text__word" aria-hidden="true"><span class="split-text__mask"><span class="split-text__unit" data-helium-animation="textRevealUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0,"easing":[0.16,1,0.3,1]}}'>V</span></span><span class="split-text__mask"><span class="split-text__unit" data-helium-animation="textRevealUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.03,"easing":[0.16,1,0.3,1]}}'>a</span></span><span class="split-text__mask"><span class="split-text__unit" data-helium-animation="textRevealUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.06,"easing":[0.16,1,0.3,1]}}'>r</span></span><span class="split-text__mask"><span class="split-text__unit" data-helium-animation="textRevealUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.09,"easing":[0.16,1,0.3,1]}}'>m</span></span><span class="split-text__mask"><span class="split-text__unit" data-helium-animation="textRevealUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.12,"easing":[0.16,1,0.3,1]}}'>a</span></span></span></span>
+              </span>
+            </h1>
+            <p class="hero__headline">
+              <span class="split-text" aria-label="I build risk models and AI workflows that people can actually act on."><span class="split-text__mask" aria-hidden="true"><span class="split-text__unit" data-helium-animation="slideInUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0,"easing":[0.16,1,0.3,1]}}'>I&nbsp;</span></span><span class="split-text__mask" aria-hidden="true"><span class="split-text__unit" data-helium-animation="slideInUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.06,"easing":[0.16,1,0.3,1]}}'>build&nbsp;</span></span><span class="split-text__mask" aria-hidden="true"><span class="split-text__unit" data-helium-animation="slideInUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.12,"easing":[0.16,1,0.3,1]}}'>risk&nbsp;</span></span><span class="split-text__mask" aria-hidden="true"><span class="split-text__unit" data-helium-animation="slideInUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.18,"easing":[0.16,1,0.3,1]}}'>models&nbsp;</span></span><span class="split-text__mask" aria-hidden="true"><span class="split-text__unit" data-helium-animation="slideInUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.24,"easing":[0.16,1,0.3,1]}}'>and&nbsp;</span></span><span class="split-text__mask" aria-hidden="true"><span class="split-text__unit" data-helium-animation="slideInUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.3,"easing":[0.16,1,0.3,1]}}'>AI&nbsp;</span></span><span class="split-text__mask" aria-hidden="true"><span class="split-text__unit" data-helium-animation="slideInUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.36,"easing":[0.16,1,0.3,1]}}'>workflows&nbsp;</span></span><span class="split-text__mask" aria-hidden="true"><span class="split-text__unit" data-helium-animation="slideInUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.42,"easing":[0.16,1,0.3,1]}}'>that&nbsp;</span></span><span class="split-text__mask" aria-hidden="true"><span class="split-text__unit" data-helium-animation="slideInUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.48,"easing":[0.16,1,0.3,1]}}'>people&nbsp;</span></span><span class="split-text__mask" aria-hidden="true"><span class="split-text__unit" data-helium-animation="slideInUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.54,"easing":[0.16,1,0.3,1]}}'>can&nbsp;</span></span><span class="split-text__mask" aria-hidden="true"><span class="split-text__unit" data-helium-animation="slideInUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.6,"easing":[0.16,1,0.3,1]}}'>actually&nbsp;</span></span><span class="split-text__mask" aria-hidden="true"><span class="split-text__unit" data-helium-animation="slideInUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.66,"easing":[0.16,1,0.3,1]}}'>act&nbsp;</span></span><span class="split-text__mask" aria-hidden="true"><span class="split-text__unit" data-helium-animation="slideInUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.85,"delay":0.72,"easing":[0.16,1,0.3,1]}}'>on.&nbsp;</span></span></span>
+            </p>
+            <p class="hero__support" data-helium-animation="bottomFadeIn" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>Data scientist with 4 years across credit risk, customer behaviour modeling, and production LLM workflows — now at AIG on Palantir Foundry and AIP, previously EverBank and Blackbuck Engineers. MS in Data Science, Stevens Institute of Technology.</p>
+            <div class="hero__cta" data-helium-animation="fade" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>
+              <span class="magnetic" data-magnetic="0.28"><a href="#experience" class="btn btn--primary js-scroll" data-target="experience">View experience</a></span>
+              <span class="magnetic" data-magnetic="0.28"><a href="Kalyan_Varma_Resume.pdf" target="_blank" rel="noreferrer" class="btn btn--ghost">Resume</a></span>
+            </div>
+            <div data-helium-animation="fade" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>
+              <div class="hero__social js-social"></div>
+            </div>
+          </div>
+          <div class="hero__visual" data-helium-animation="revealRightToLeft" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":1.1}}'>
+            <div class="hero__panel" id="hero-panel">
+              <span class="hero__panel-label">Currently</span>
+              <strong>AIG</strong>
+              <p>AI Software Engineer — production LLM workflows on Palantir Foundry and AIP, classifying documents across 500K+ claims a year.</p>
+              <ul>
+                <li>AIG · Aug 2025 — Present</li>
+                <li>EverBank · 2024 — 2025</li>
+                <li>Blackbuck Engineers · 2020 — 2022</li>
+              </ul>
+              <div class="hero__panel-glow" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__scroll-hint" aria-hidden="true"><span>Scroll</span><i></i></div>
+      </section>
+
+      <div class="marquee" aria-hidden="true"><div class="marquee__track" id="marquee-track"></div></div>
+
+      <section id="experience" class="section section--experience">
+        <div class="container experience">
+          <header class="section__header">
+            <p class="eyebrow" data-helium-animation="fade" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>Experience</p>
+            <h2 data-helium-animation="blurScaleIn" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>Work history</h2>
+            <p class="section__lead" data-helium-animation="bottomFadeIn" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>Roles and shipped work from my resume — AIG, EverBank, and Blackbuck Engineers.</p>
+            <a href="Kalyan_Varma_Resume.pdf" target="_blank" rel="noreferrer" class="btn btn--ghost experience__resume" data-helium-animation="fade" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>Download resume</a>
+          </header>
+          <ol class="experience__list" id="experience-list"></ol>
+          <div class="experience__extras" data-helium-animation="slideInUp" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.7}}'>
+            <div class="experience__resume-projects">
+              <h3>Certifications</h3>
+              <ul id="certifications"></ul>
+            </div>
+            <div class="experience__education">
+              <h3>Education</h3>
+              <p><strong>Doctor of Business Administration, Applied Artificial Intelligence</strong><br/>Belhaven University<br/><span>Aug 2026 — Present</span></p>
+              <p style="margin-top:1rem"><strong>Master of Science, Data Science</strong><br/>Stevens Institute of Technology · GPA 3.87<br/><span>Sep 2022 — Jun 2024</span></p>
+              <p style="margin-top:1rem"><strong>Bachelors, Computer Science &amp; Engineering</strong><br/>CMR College of Engineering &amp; Technology · GPA 3.56<br/><span>Jul 2018 — Jun 2022</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section section--process">
+        <div class="container">
+          <header class="section__header">
+            <p class="eyebrow" data-helium-animation="fade" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>Process</p>
+            <h2 data-helium-animation="blurScaleIn" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>How I take models to production</h2>
+            <p class="section__lead" data-helium-animation="bottomFadeIn" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>A repeatable loop used on credit risk models, deposit attrition, and LLM claims triage.</p>
+          </header>
+          <ol class="process__list" id="process-list"></ol>
+        </div>
+      </section>
+
+      <section id="about" class="section section--about">
+        <div class="container">
+          <header class="section__header">
+            <p class="eyebrow" data-helium-animation="fade" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>About</p>
+            <h2 data-helium-animation="blurScaleIn" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>How I work</h2>
+            <p class="section__lead" data-helium-animation="bottomFadeIn" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>Data scientist with 4 years of experience building credit risk and customer behaviour models, and the data foundations they run on. Comfortable owning a model end to end, from raw source data through to the decision it informs.</p>
+          </header>
+          <div class="about__grid">
+            <div class="about__copy" data-helium-animation="slideInLeft" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>
+              <p>At AIG I work on production LLM workflows on Palantir Foundry and AIP — AI-assisted claims triage that classifies documents and extracts risk flags across 500K+ claims a year, plus the pipelines, Workshop apps, and alerting that keep it running. Before that, at EverBank I developed probability-of-default and deposit attrition models for a retail and mortgage portfolio, with the feature engineering, validation, and model risk documentation that regulated modeling requires. I started as a data engineer at Blackbuck Engineers, building a student data platform on AWS and Databricks.</p>
+              <p>I care about point-in-time-correct data, calibrated and explainable models, and monitoring that catches drift before the business does. Day to day that means Python, SQL, PySpark, XGBoost and scorecards, Airflow and MLflow, and TypeScript when the work lives in Foundry.</p>
+            </div>
+            <div class="about__skills" data-helium-animation="slideInRight" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>
+              <h3>Technologies</h3>
+              <ul class="skill-list" id="skill-list"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="big-cta" aria-label="Call to action">
+        <div class="container big-cta__inner">
+          <p class="eyebrow" data-helium-animation="fade" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>Next step</p>
+          <div data-helium-animation="blurScaleIn" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>
+            <a href="#contact" class="big-cta__title js-scroll" data-target="contact">Let’s talk</a>
+          </div>
+          <p class="big-cta__lead" data-helium-animation="bottomFadeIn" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>Have a risk model, data platform, or LLM workflow that needs someone to own it end to end?</p>
+          <span class="magnetic" data-magnetic="0.2"><a href="mailto:kalyanvarmalokam55@gmail.com" class="btn btn--primary btn--xl">kalyanvarmalokam55@gmail.com</a></span>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--contact">
+        <div class="container">
+          <header class="section__header">
+            <p class="eyebrow" data-helium-animation="fade" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>Contact</p>
+            <h2 data-helium-animation="blurScaleIn" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>Start a conversation</h2>
+            <p class="section__lead" data-helium-animation="bottomFadeIn" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>Open to data science and AI engineering roles, and conversations about credit risk, LLM workflows, and Palantir Foundry.</p>
+          </header>
+          <div class="contact__grid">
+            <form class="contact__form" id="contact-form" data-helium-animation="slideInLeft" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>
+              <label>Name<input name="name" placeholder="Your name" required/></label>
+              <label>Email<input type="email" name="email" placeholder="you@email.com" required/></label>
+              <label>Message<textarea name="message" placeholder="What are you working on?" rows="5" required></textarea></label>
+              <button type="submit" class="btn btn--primary">Send message</button>
+            </form>
+            <aside class="contact__aside" data-helium-animation="slideInRight" data-helium-animation-trigger="view" data-helium-animation-options='{"viewSettings":{"once":true},"transitionSettings":{"duration":0.8}}'>
+              <div>
+                <h3>Email</h3>
+                <a href="mailto:kalyanvarmalokam55@gmail.com">kalyanvarmalokam55@gmail.com</a>
+              </div>
+              <div>
+                <h3>Phone</h3>
+                <a href="tel:+14122546364">+1 (412) 254-6364</a>
+              </div>
+              <div>
+                <h3>Based in</h3>
+                <p>United States of America</p>
+              </div>
+              <div>
+                <h3>Local time</h3>
+                <p class="contact__clock" id="clock">—</p>
+              </div>
+              <div>
+                <h3>Social</h3>
+                <div class="hero__social js-social"></div>
+              </div>
+            </aside>
+          </div>
+        </div>
+        <footer class="site-footer">
+          <div class="container site-footer__inner">
+            <span class="site-footer__brand">
+              <svg class="site-logo" width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kalyan Varma">
+                <rect x="2.5" y="2.5" width="59" height="59" rx="16" stroke="currentColor" stroke-width="2" opacity="0.88"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M19 13.5H25V30.2L41.9 13.5H49.6L31.6 31.9L49.8 50H42L25 33.2V50H19Z" fill="currentColor"/>
+                <rect x="23.2" y="36.4" width="17.6" height="3.6" rx="1.2" fill="var(--accent, #8ec5ff)"/>
+                <circle cx="32" cy="10.2" r="2.1" fill="var(--accent, #8ec5ff)"/>
+              </svg>
+              © <span id="footer-year">2026</span> Kalyan Varma
+            </span>
+            <span>United States of America · Eastern Time</span>
+            <span>Data science · AI engineering · MLOps</span>
+          </div>
+        </footer>
+      </section>
+
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
